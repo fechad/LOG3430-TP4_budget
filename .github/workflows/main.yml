@@ -8,10 +8,10 @@ jobs :
         with :
           fetch−depth : 0
       - name : Setup Python
-        uses: actions/setup−python@v4
+        uses: actions/setup−python@v2
         with :
           python-version : "3.9"
       - name: Install packages
-        run: pip install −r requirements.txt
+        run: pip install -r requirements.txt
       - name: Run git bisect
         run: python myscript.py
